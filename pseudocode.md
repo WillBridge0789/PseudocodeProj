@@ -1,25 +1,36 @@
 # Brewing a cup of coffee
 
 ## INIT: Variables<br>
-* Coffee Pot: has a liquid volume max of 5 cups<br>
-* Cup: When filled with Water OR Coffee, becomes **fullCup**<br>
+* Coffee Pot: Can brew up to (5) cups<br>
+* Cup of Water: max (5)<br>
+* Cup of Coffee: (1) Cup per brew
 * Coffee Filter Basket<br>
 * Coffee Filter<br>
-* Water<br>
 * Bag of Coffee<br>
+* Water <br>
 * Spoon
 
 
-Functions: <br>
 
-### Function coffeePot()
-    FOR cup of Water IN Cup
-        IF (Cup > 0) && (Cup <= 6)
-            Brew Coffee
-        ELSE
+## Functions: <br>
+
+### Function brewCoffee()
+    WHILE (water IN Coffee Pot) 
+        FOR cupOfWater IN CoffeePot
+            IF (cupOfWater > 0) AND ( <= 5)
+                Say "Coffee is brewing!"
+            ELSE
+                Say "Please fill to start brew"
             END
 
-Cup is empty (Cup = 0)
+
+## START
+Coffee Pot = 
+Cup of Water = 0 <br>
+Cup of Coffee = 0<br>
+Coffee Filter Basket = 0 (*no filter in it*)<br>
+Coffee Filter = 0 (*empty*)<br>
+
 1. **IF** Cup is empty
     * fill cup with water
     * Cup += 1
