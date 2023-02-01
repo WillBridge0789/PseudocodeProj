@@ -42,10 +42,11 @@ Coffee Filter Basket = 0 (*no filter in it*)<br>
 Coffee Filter = 0 (*empty*)<br>
 Bag of Coffee = Coffee grounds(*5 scoops*)
 
+## PREPARING
 1. **getMaterials();**
     >*Cup of Water, Coffee Filter, Bag of Coffee and Spoon should have a value of 1.*
 
-
+## RUN
 2. **FOR** Water **IN** Cup Of Water
     * **IF** Cup Of Water += 1
         * pour Cup Of Water into Coffee Pot<br> (Coffee Pot += 1 Cup)
