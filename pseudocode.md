@@ -60,12 +60,12 @@ Bag of Coffee = Coffee grounds(*5 scoops*)
 4. Grab Spoon 
 5. **DO** 1 Spoon of Coffee Grounds FROM Bag of Coffee<br>
     **WHILE** Coffee Filter is in Coffee Filter Basket<br>
-         **FOR** each Cup of Water *IN* Coffee Pot (*Coffee Pot currently equals 1*)<br>
-            **SCOOP** 1 Spoon of Coffee Grounds<br>
+         ->**FOR** each Cup of Water *IN* Coffee Pot (*Coffee Pot currently equals 1*)<br>
+            ---->**SCOOP** 1 Spoon of Coffee Grounds<br>
              *Coffee Filter now equals 1 and Bag of Coffee's value should be 4*
-
+    * END
 8. **WHILE** Coffee Pot has Water, Coffee Filter Basket has Filter *WITH* Coffee
-    * **brewCoffee();**
+    * **brewCoffee(1);**
     >*Cup of Coffee value is now 1*
 
 9. **SERVE** Cup of Coffee
