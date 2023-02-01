@@ -1,8 +1,8 @@
 Brewing a cup of coffee
 
-INIT: variables<br>
-* Coffee Pot<br>
-* Cup<br>
+Variables<br>
+* Coffee Pot: has a liquid volume max of 5 cups<br>
+* Cup: When filled with Water OR Coffee, becomes **fullCup**<br>
 * Coffee Filter Basket<br>
 * Coffee Filter<br>
 * Water<br>
@@ -10,12 +10,14 @@ INIT: variables<br>
 * Spoon
 
 START: <br>
-Cup is empty
+Cup is empty (Cup = 0)
 1. **IF** Cup is empty
     * fill cup with water
+    * Cup = fullCup++
+        * END
 
 2. **IF** Water **IN** Cup
-    * pour cup into Coffee Pot (Coffee Pot = 1 Cup)
+    * pour Cup into Coffee Pot (Coffee Pot = 1 Cup)
 
 3. Grab a Coffee Filter
 
